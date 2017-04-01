@@ -1,0 +1,16 @@
+#include<cs50.h>
+#include<stdio.h>
+int main(void)
+{
+    printf("the time spent in the shower\n");
+    int minutes;
+    do
+    {
+        minutes=get_int();
+    }
+    while(minutes<0);
+    
+    printf("the amount of water consumed in terms of bottles is %i\n ",minutes*12);
+}
+submit50
+cd ~/workspace/pset1/submit50 2017/x/water
