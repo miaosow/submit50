@@ -1,0 +1,29 @@
+#include<stdio.h>
+#include<cs50.h>
+int main(void)
+{
+    int height;
+    int rows;
+    int space;
+    int hash;
+    printf("enter the height of the pyramid\n");
+    do
+    {
+        height=get_int();
+    }
+    while(height<0||height>23);
+for(rows=1;rows<=height;rows++)
+{
+    for(space=height-1;space>0;space--)
+    {
+        printf(" " " ");
+    }
+    for(hash=1;hash<=rows+1;hash++)
+    {
+        printf("#");
+    }
+    printf("\n");
+}
+}
+    
+cd ~/workspace/pset1/submit50 2017/x/mario_less
